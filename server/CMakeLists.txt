@@ -21,18 +21,18 @@ add_subdirectory(lib)
 # add_subdirectory(jni)
 
 # wasm
-file(MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/wasm)
+# file(MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/wasm)
 
-add_custom_target(wasm_t1 ALL
-    COMMAND emcmake cmake ${CMAKE_CURRENT_SOURCE_DIR}/wasm
-    COMMAND make
-    DEPENDS ${CMAKE_BINARY_DIR}/wasm
-    WORKING_DIRECTORY ${CMAKE_BINARY_DIR}/wasm
-    COMMENT "wasm - emcmake"
-  VERBATIM
-)
+# add_custom_target(wasm_t1 ALL
+#     COMMAND emcmake cmake ${CMAKE_CURRENT_SOURCE_DIR}/wasm
+#     COMMAND make
+#     DEPENDS ${CMAKE_BINARY_DIR}/wasm
+#     WORKING_DIRECTORY ${CMAKE_BINARY_DIR}/wasm
+#     COMMENT "wasm - emcmake"
+#   VERBATIM
+# )
 
-message(<<<<<<<<<<PROJ<<<<<<<<<<<)
+# message(<<<<<<<<<<PROJ<<<<<<<<<<<)
 
 # test
 include(CTest)
