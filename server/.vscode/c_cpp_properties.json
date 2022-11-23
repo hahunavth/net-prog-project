@@ -1,0 +1,21 @@
+{
+  "env": {
+    "custom_inc_path": [
+      "/usr/lib/jvm/java-8-openjdk-amd64/include/",
+      "/usr/lib/jvm/java-8-openjdk-amd64/include/linux/"
+    ]
+  },
+  "configurations": [
+    {
+      "name": "Linux",
+      "includePath": ["${workspaceFolder}/**", "${custom_inc_path}"],
+      "defines": [],
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu17",
+      "cppStandard": "gnu++17",
+      "intelliSenseMode": "linux-gcc-x64",
+      "compileCommands": "${workspaceFolder}/build/compile_commands.json"
+    }
+  ],
+  "version": 4
+}
