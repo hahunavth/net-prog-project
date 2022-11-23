@@ -33,3 +33,8 @@ add_custom_target(wasm_t1 ALL
 )
 
 message(<<<<<<<<<<PROJ<<<<<<<<<<<)
+
+
+# test
+include(CTest)
+enable_testing()
