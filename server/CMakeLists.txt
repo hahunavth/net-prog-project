@@ -18,7 +18,7 @@ endif()
 
 # lib
 add_subdirectory(lib)
-add_subdirectory(jni)
+# add_subdirectory(jni)
 
 # wasm
 file(MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/wasm)
