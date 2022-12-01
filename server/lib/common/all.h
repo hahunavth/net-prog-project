@@ -4,5 +4,6 @@
 #include "./std.h"
 #include "./msg.h"
 #include "./utils.h"
+#include "../data_structures/bkcgen.h"
 
 #endif

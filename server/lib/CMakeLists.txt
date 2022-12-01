@@ -12,7 +12,7 @@ endif (NOT CMAKE_BUILD_TYPE)
 #   TODO: Add exec.c file here!
 list(APPEND EXEC_C_FILES 
   # file has main function!
-  # "main.c"
+  "main.c"
 )
 
 # Add debug flag
@@ -37,6 +37,8 @@ file(GLOB PJ_SRC
      "msg/*.c"
      "msg/*/*.h"
      "msg/*/*.c"
+     "data_structures/*.h"
+     "data_structures/*.c"
 )
 
 message(">>>>>>>>>>LIB_>>>>>>>>>>>")
