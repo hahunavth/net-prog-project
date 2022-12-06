@@ -1,12 +1,10 @@
-package com.netprog.client;
-
-import java.util.Objects;
+package com.netprog.client.Experiment;
 
 public class TryJNI {
     static {
         System.loadLibrary(
 //                Objects.requireNonNull(TryJNI.class.getClassLoader().getResource("libchatptcl.so")).getPath()
-                "/home/kryo/Desktop/net-prog/project/client/src/main/resources/libchatptcl.so"
+                "/home/kryo/Desktop/net-prog-pj/client-java/src/main/resources/libchatptcl.so"
         );
     }
 

@@ -67,10 +67,16 @@ int main()
         recv_data[bytes_received] = '\0';
       }
       PRINT_STR(recv_data);
+
+      //
+      strcpy(send_data, "RECV: ");
+      strcat(send_data, recv_data);
+      // strcat(send_data, "\n");
+      // send_data[strlen(send_data)] = '\0';
+      bytes_sent = send(conn_sock, send_data, strlen(send_data), 0);
     }
     // Step 2: send
-    // strcpy(send_data, "a");
-    // bytes_sent = send(conn_sock, send_data, strlen(send_data), 0);
+
     // NOTE: Send long msg
     // char *long_msg = "Hello from ????????????? !!!!!!!!!!!!!!!!!!!!!!!! ???";
     // int i = 0;
@@ -81,9 +87,9 @@ int main()
     //   i += bytes_sent;
     // }
 
-    close(listen_sock);
+    // close(listen_sock);
     //
-    break; // connect 1 time and close
+    // break; // connect 1 time and close
     //
   }
   close(listen_sock);

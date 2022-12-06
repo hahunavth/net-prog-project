@@ -1,4 +1,4 @@
-package com.netprog.client;
+package com.netprog.client.Experiment;
 
 import java.io.*;
 import java.net.*;

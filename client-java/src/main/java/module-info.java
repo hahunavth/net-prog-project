@@ -12,4 +12,6 @@ module com.netprog.client {
 
     opens com.netprog.client to javafx.fxml;
     exports com.netprog.client;
+    exports com.netprog.client.Experiment;
+    opens com.netprog.client.Experiment to javafx.fxml;
 }

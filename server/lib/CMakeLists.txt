@@ -37,12 +37,13 @@ file(GLOB PJ_SRC
      "msg/*.c"
      "msg/*/*.h"
      "msg/*/*.c"
-     "data_structures/*.h"
-     "data_structures/*.c"
+    #  "cgen/*.h"
+    #  "cgen/*.c"
 )
 
 message(">>>>>>>>>>LIB_>>>>>>>>>>>")
 
+add_subdirectory(cgen)
 # add_subdirectory(test)
 # add_subdirectory(wasm)
 

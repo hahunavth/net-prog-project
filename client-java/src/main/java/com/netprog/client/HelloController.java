@@ -1,14 +1,20 @@
 package com.netprog.client;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 public class HelloController {
     @FXML
-    private Label welcomeText;
+    private Button msgSend;
 
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    private TextField msgTextbox;
+
+    @FXML
+    protected void onPressSendMsg() {
+        System.out.println(msgTextbox.getText());
+        HelloApplication.c.send(msgTextbox.getText());
     }
 }
