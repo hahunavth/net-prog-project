@@ -1,5 +1,5 @@
-#include "../../common/all.h"
-#include "../../msg/msg-header.h"
+#include "../../lib/common/all.h"
+#include "../../lib/msg/msg-header.h"
 
 int main()
 {

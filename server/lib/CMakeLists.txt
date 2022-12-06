@@ -43,7 +43,7 @@ file(GLOB PJ_SRC
 
 message(">>>>>>>>>>LIB_>>>>>>>>>>>")
 
-add_subdirectory(test)
+# add_subdirectory(test)
 # add_subdirectory(wasm)
 
 if(${CMAKE_CURRENT_SOURCE_DIR} STREQUAL ${CMAKE_SOURCE_DIR})

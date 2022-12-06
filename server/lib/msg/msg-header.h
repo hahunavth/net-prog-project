@@ -10,15 +10,18 @@
  * Copyright (c) 2022 Vu Thanh Ha
  */
 // CONTENT TYPE
-#define CT_FILE 0x00
-#define CT_MSG 0x01
-#define CT_END 0x02
-#define CT_REGISTER 0x05
-#define CT_EXIT 0x06
+enum ContentType
+{
+  CT_FILE,
+  CT_MSG,
+  CT_END,
+  CT_REGISTER,
+  CT_EXIT
+};
 
 typedef struct
 {
-  int content_type;
+  enum ContentType content_type;
   //
   long content_len;
   //

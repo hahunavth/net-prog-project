@@ -1,3 +1,6 @@
 {
-  "cmake.sourceDirectory": "${workspaceFolder}/server"
+  "cmake.sourceDirectory": "${workspaceFolder}/server",
+  "files.associations": {
+    "msg-header.h": "c"
+  }
 }

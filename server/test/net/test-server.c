@@ -1,4 +1,4 @@
-#include "../../common/all.h"
+#include "../../lib/common/all.h"
 
 #include "../base/utils.h"
 

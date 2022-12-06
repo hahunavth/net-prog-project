@@ -1,4 +1,4 @@
-#include "../../common/all.h"
+#include "../../lib/common/all.h"
 
 #define MAX_LEN 10000
 #define BUFF_SIZE 64

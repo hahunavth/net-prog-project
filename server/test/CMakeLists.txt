@@ -8,6 +8,9 @@ file(GLOB TEST_SRC
 # "*?/*.h"
 )
 
+# add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../lib ${CMAKE_CURRENT_BINARY_DIR}/lib)
+
+
 message(">>>>>>>>>>TEST>>>>>>>>>>>")
 
 

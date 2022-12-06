@@ -61,8 +61,8 @@ int main(int argc, char *argv)
   // PRINT_STR(NULL);
   PRINT_INT(5);
 
-  // pthread_join(t1, NULL); // wait until thread end
-  // pthread_join(t2, NULL);
+  pthread_join(t1, NULL); // wait until thread end
+  pthread_join(t2, NULL);
   sem_destroy(&mutex);
   return 0;
 }
