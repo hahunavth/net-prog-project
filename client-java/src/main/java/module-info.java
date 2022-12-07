@@ -9,6 +9,7 @@ module com.netprog.client {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
 //    requires eu.hansolo.tilesfx;
+    requires org.jnrproject.ffi;
 
     opens com.netprog.client to javafx.fxml;
     exports com.netprog.client;

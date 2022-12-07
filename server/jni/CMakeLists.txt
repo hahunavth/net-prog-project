@@ -100,16 +100,14 @@ file(GLOB JNI_UTILS_FILES
 # -------------------------------------------
 # Step 1: gen header file
 execute_process(
-  COMMAND javac -h . ${CMAKE_CURRENT_SOURCE_DIR}/../../client-java/src/main/java/com/netprog/client/MsgExtractorJNI.java ${CMAKE_CURRENT_SOURCE_DIR}/../../client-java/src/main/java/com/netprog/client/MsgHeader.java
+  COMMAND javac -h . ${CMAKE_CURRENT_SOURCE_DIR}/../../client-java/src/main/java/com/netprog/client/Experiment/MsgExtractorJNI.java ${CMAKE_CURRENT_SOURCE_DIR}/../../client-java/src/main/java/com/netprog/client/Experiment/MsgHeaderJNI.java
   WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/j_header
 )
-# Step 2: add java file
-add_jar(msg_extractor_java ${CMAKE_CURRENT_SOURCE_DIR}/../../client-java/src/main/java/com/netprog/client/MsgExtractorJNI.java ${CMAKE_CURRENT_SOURCE_DIR}/../../client-java/src/main/java/com/netprog/client/MsgHeader.java)
+# # Step 2: add java file
+add_jar(msg_extractor_java ${CMAKE_CURRENT_SOURCE_DIR}/../../client-java/src/main/java/com/netprog/client/Experiment/MsgExtractorJNI.java ${CMAKE_CURRENT_SOURCE_DIR}/../../client-java/src/main/java/com/netprog/client/Experiment/MsgHeaderJNI.java)
 get_target_property(_jarFile msg_extractor_java JAR_FILE)
 get_target_property(_classDir msg_extractor_java CLASSDIR)
 message(msg_extractor_java)
-# set (_stubDir "${CMAKE_CURRENT_SOURCE_DIR}/j_header")
-# include_directories(${JNI_INCLUDE_DIRS} ${_classDir} ${_stubDir})
 add_library(msg_extractor_jni MODULE 
   ./msg_extractor.c ./j_header/com_netprog_client_MsgExtractorJNI.h 
   ${JNI_UTILS_FILES}

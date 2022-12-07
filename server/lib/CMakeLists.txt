@@ -54,7 +54,7 @@ if(${CMAKE_CURRENT_SOURCE_DIR} STREQUAL ${CMAKE_SOURCE_DIR})
       message("Not using emscripten!")
   endif()
 endif()
-
+  
 # Filter exec file in lib_list
 if(${CMAKE_CURRENT_SOURCE_DIR} STREQUAL ${CMAKE_SOURCE_DIR})
   message("Filter file: ")
@@ -75,6 +75,10 @@ if(${CMAKE_CURRENT_SOURCE_DIR} STREQUAL ${CMAKE_SOURCE_DIR})
 endif()
 
 add_library(chatptcl STATIC ${PJ_SRC})
+target_link_libraries(chatptcl cgen)
+
+add_library(chatptclm MODULE ${PJ_SRC})
+target_link_libraries(chatptclm cgen)
 
 # add exec
 if(${CMAKE_CURRENT_SOURCE_DIR} STREQUAL ${CMAKE_SOURCE_DIR})
